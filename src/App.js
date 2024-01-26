@@ -7,7 +7,7 @@ function App() {
       <div className="overlay">
         <div className="basket">
           <h2 className="mb-30">Корзина</h2>
-          <div className="items">
+          <div className="items flex">
 
          
           <div className="cartItems d-flex align-center mb-20 ">
@@ -33,8 +33,9 @@ function App() {
                 </div>
           </div>
        </div>
+<div className="cartTotalBlock">
 
-       <ul className="cartTotalBlock">
+ <ul>
               <li >
                 <span>Итого</span>
                 <div></div>
@@ -46,6 +47,14 @@ function App() {
                 <b>1074 руб. </b>
               </li>
             </ul>
+
+   <button className="greenButton">Офомить заказ<img src="/img/arrow.svg" alt="arrow"/></button>
+</div>
+      
+
+
+
+           
           </div>
       </div>
 
