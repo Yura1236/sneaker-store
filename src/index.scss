@@ -138,8 +138,8 @@ input{
   height:100%;
   left: 0;
   top: 0;
-  background-color: rgba(217, 255, 0, 0.432);
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.432);
+  z-index: -1;
 }
 .cartItems{
   border: 1px solid rgba(196, 196, 196, 0.651);
