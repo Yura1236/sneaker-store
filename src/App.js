@@ -1,6 +1,16 @@
 import Card from "./components/Card";
 import Header from "./components/Header";
 import CartBasket from "./components/CartBasket";
+const arr =[
+{title:'1111111',prise:1299,imageUrl:'/img/sneakers/image 1.jpg'},
+{title:'222222',prise:12,imageUrl:'/img/sneakers/image 2.jpg'},
+{title:'11333333',prise:99,imageUrl:'/img/sneakers/image 3.jpg'},
+{title:'1444444',prise:1,imageUrl:'/img/sneakers/image 4.jpg'},
+
+ 
+
+  
+];
 
 function App() {
   return (
@@ -23,50 +33,23 @@ function App() {
       </div>
  
 
-      <div className="d-flex">
-     <Card/>
+               <div className="d-flex">
+             
+            
+
+
+               {arr.map((obj)=>(
+               <Card 
+                   title={obj.title}
+                   prise={obj.prise}
+                   imageUrl={obj.imageUrl}
+              />
+
+              ))}
      
-     
-      <div className="card">
-        <img width={133} height={112} src="/img/sneakers/image 2.jpg" alt="sneakers"/>
-        <h5>Мужские Кроссовки Nike Air Max 270</h5>
-        <div className="d-flex justify-between align-center">
-          <div className=" price d-flex flex-column">
-            <span>цена:</span>
-            <b> 3333 грн</b>
-          </div>
-          <button className="button">
-            <img width={11} height={11} src="/img/Vector.svg" alt="Plus"/>
-          </button>
-        </div>
-      </div>
-      <div className="card">
-        <img width={133} height={112} src="/img/sneakers/image 3.jpg" alt="sneakers"/>
-        <h5>Мужские Кроссовки Nike Air Max 270</h5>
-        <div className="d-flex justify-between align-center">
-          <div className=" price d-flex flex-column">
-            <span>цена:</span>
-            <b> 3333 грн</b>
-          </div>
-          <button className="button">
-            <img width={11} height={11} src="/img/Vector.svg" alt="Plus"/>
-          </button>
-        </div>
-      </div>
-      <div className="card">
-        <img width={133} height={112} src="/img/sneakers/image 4.jpg" alt="sneakers"/>
-        <h5>Мужские Кроссовки Nike Air Max 270</h5>
-        <div className="d-flex justify-between align-center">
-          <div className=" price d-flex flex-column">
-            <span>цена:</span>
-            <b> 3333 грн</b>
-          </div>
-          <button className="button">
-            <img width={11} height={11} src="/img/Vector.svg" alt="Plus"/>
-          </button>
-        </div>
-      </div>
-      </div>
+    
+    
+               </div>
       </div>
     </div>
   );
