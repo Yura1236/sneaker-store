@@ -43,6 +43,7 @@ function App() {
                    title={obj.title}
                    prise={obj.prise}
                    imageUrl={obj.imageUrl}
+                   click={()=>console.log(obj)}
               />
 
               ))}

@@ -28,46 +28,8 @@ h3{
     margin: 0;
   }
 }
-.card{
-  border: 1px solid rgba(212, 212, 212, 0.514);
-  padding: 20px;
-  width: 210px;
- border-radius: 40px; 
-margin-right: 50px;
-transition: box-shadow 0.3s ease-in-out,transform 0.2s ease-in-out;
-
-&:hover{
-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.11);
-transform: translateY(-5px);
-}
 
 
- h5{
-font-weight: 400;
-font-size: 14px;
- }
-}
-
-.price{
-span{
-  font-size: 13px;
-  opacity: 0.5;
-  text-transform: uppercase;
-}
-b{
-  font-size: 13px;
-}
-
-}
-.button{
-  background: rgb(255, 255, 255);
-  border: 1px solid rgba(196, 196, 196, 0.651);
-  box-sizing: border-box;
-  border-radius: 8px;
-  height: 32px;
-  width: 32px;
-  cursor: pointer;
-}
 
 li{
   span{
@@ -102,10 +64,7 @@ input{
   margin-bottom: 100px;
 }
 
-.faforite{
-  position: absolute;
-  cursor: pointer;
-}
+
 .basket{
   position: absolute;
   width: 420px;
@@ -209,3 +168,24 @@ padding: 20px;
 }
   
 }
+
+.button{
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(196, 196, 196, 0.651);
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+.price{
+  span{
+    font-size: 13px;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+  b{
+    font-size: 13px;
+  }
+  
+  }
