@@ -1,8 +1,8 @@
-function CartBasket(){
+function CartBasket(props){
     return(
-        <div style={{display:'none'}}className="overlay">
+        <div className="overlay">
         <div className="basket">
-          <h2 className="mb-30 d-flex justify-between">Корзина <img className="removeBtn cu-p" src="/img/button_delete.svg"alt="button_delete"/></h2>
+          <h2 className="mb-30 d-flex justify-between">Корзина <img onClick={props.onCloseCart} className="removeBtn cu-p" src="/img/button_delete.svg"alt="button_delete"/></h2>
           <div className="items flex">
 
          
