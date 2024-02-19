@@ -1,33 +1,25 @@
-function CartBasket(props){
+function CartBasket({ onCloseCart, items = [] }){
     return(
         <div className="overlay">
         <div className="basket">
-          <h2 className="mb-30 d-flex justify-between">Корзина <img onClick={props.onCloseCart} className="removeBtn cu-p" src="/img/button_delete.svg"alt="button_delete"/></h2>
+          <h2 className="mb-30 d-flex justify-between">Корзина <img onClick={onCloseCart}  className="removeBtn cu-p" src="/img/button_delete.svg"alt="Close"/></h2>
           <div className="items flex">
 
          
-          <div className="cartItems d-flex align-center mb-20 ">
-            <img className="mt-3 mr-20" width={70} height={70} src="/img/sneakers/image 1.jpg"alt="sneakers1"/>
-            
-                 <div className="mr-20">
-                  <p className="mb-5">Мужские Кроссовки Nike Air Max 270</p>
-                   <b> 3333 грн</b>
-                </div>
-                <div >
-                  <img className="removeBtn" src="/img/button_delete.svg"alt="button_delete"/>
-                </div>
-          </div>
-          <div className="cartItems d-flex align-center mb-20 ">
-            <img className="mt-3 mr-20" width={70} height={70} src="/img/sneakers/image 1.jpg"alt="sneakers1"/>
-            
-                 <div className="mr-20">
-                  <p className="mb-5">Мужские Кроссовки Nike Air Max 270</p>
-                   <b> 3333 грн</b>
-                </div>
-                <div >
-                  <img className="removeBtn" src="/img/button_delete.svg"alt="button_delete"/>
-                </div>
-          </div>
+          {items.map((obj) => (
+            <div className="cartItem d-flex align-center mb-20">
+              <div
+                style={{ backgroundImage: `url(${obj.imageUrl})` }}
+                className="cartItemImg"></div>
+
+              <div className="mr-20 flex">
+                <p className="mb-5">{obj.title}</p>
+                <b>{obj.price} руб.</b>
+              </div>
+              <img className="removeBtn" src="/img/button_delete.svg" alt="Remove" />
+            </div>
+       
+       ))} 
        </div>
 <div className="cartTotalBlock">
 

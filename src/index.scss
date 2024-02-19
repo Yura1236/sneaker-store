@@ -24,6 +24,7 @@ h3{
 }
 }
 .content{
+  
   h1{
     margin: 0;
   }
@@ -44,6 +45,7 @@ li{
   color: rgb(255, 208, 0);
   opacity: 0.9;
   margin-top: 10px;
+  margin-bottom: 100px;
 }
 
 .search-block{
@@ -51,20 +53,23 @@ li{
   border-radius: 12px;
   padding: 0px 15px;
   margin-top: -80px;
+  position: relative;
+ 
 }
-
+.clearr {
+  right: 0;
+ width: 18px;
+ height: 18px;
+ position: absolute;
+ top: 6px;
+ right: 10px;
+}
 input{
   border: 0;
   padding: 6px;
   font-size: 16px;
   width: 200px;
 }
-
-.coment{
-  margin-bottom: 100px;
-}
-
-
 .basket{
   position: absolute;
   width: 420px;
@@ -181,3 +186,4 @@ padding: 20px;
   }
   
   }
+  
